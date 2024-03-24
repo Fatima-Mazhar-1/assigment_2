@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".elevenpage"
+    android:weightSum="10"
+    android:background="#DEF8F8"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:background="@drawable/bluerect"
+        >
+
+        <ImageButton
+            android:layout_width="83dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:onClick="toTen"
+            android:src="@drawable/backarrow"
+            android:contentDescription="back"
+
+            >
+
+        </ImageButton>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.125"
+                >
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hi, I am John Cooper"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    android:layout_marginStart="30dp"
+                    android:textColor="@color/white"
+                >
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <ImageButton
+                    android:id="@+id/image"
+                    android:layout_width="129dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@null"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/img_31"
+                    android:contentDescription="john"
+
+                    >
+
+                </ImageButton>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DEF8F8"
+            >
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drop me a review!"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+
+        >
+
+    </TextView>
+
+
+
+
+</LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="154dp"
+            android:layout_marginTop="348dp"
+            android:background="@drawable/whiteroundsquaregreen"
+            android:gravity="top|center_vertical"
+            android:hint="Type your experience..."
+            android:paddingStart="50dp"
+            android:paddingTop="30dp"
+            android:textColor="#757272"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.524"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    >
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:numStars="5"
+            android:progressTint="#FFEB3B"
+            android:layout_marginStart="60dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        >
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_button"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

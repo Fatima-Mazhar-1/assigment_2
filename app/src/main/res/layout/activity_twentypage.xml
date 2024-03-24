@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".twentypage"
+    android:background="#DEF8F8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#CCCCCC">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Cooper"
+            android:textSize="20sp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.095"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50:08"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            app:layout_constraintVertical_bias="0.021">
+
+        </TextView>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="17dp"
+            android:background="@null"
+            android:src="@drawable/img_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            app:layout_constraintVertical_bias="0.0"
+            android:scaleType="fitXY"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+
+
+
+            >
+
+
+        </com.google.android.material.imageview.ShapeableImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        >
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/greyrect"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="150dp"/>
+
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.65"
+        >
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_4"
+            android:contentDescription="light"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.350"
+            app:layout_constraintStart_toEndOf="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="@id/imageButton2"
+            app:layout_constraintVertical_bias="1.0">
+
+        </ImageButton>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="77dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_5"
+            android:contentDescription="light"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButton3"
+            app:layout_constraintTop_toTopOf="@+id/imageButton3">
+
+        </ImageButton>
+
+        <ImageButton
+            android:onClick="toThirteen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_6"
+            android:contentDescription="light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageButton3"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+            app:layout_constraintVertical_bias="0.0">
+
+        </ImageButton>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

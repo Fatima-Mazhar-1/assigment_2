@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eightpage"
+    android:background="@drawable/try2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="15"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backarrow"
+                android:background="@null"
+                android:layout_marginTop="10dp"
+                android:onClick="toSeven"
+                >
+
+            </ImageButton>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lets Find..."
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginStart="30dp"
+                android:textColor="#157177"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/whiterect"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:drawableStart="@drawable/search"
+                android:hint="Search..."
+
+                >
+
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Recent Searches"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#157177"
+                android:layout_marginStart="30dp"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Mentor 1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:drawableEnd="@drawable/cross"
+            android:layout_marginEnd="20dp"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Mentor 1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:drawableEnd="@drawable/cross"
+            android:layout_marginEnd="20dp"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Mentor 1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:drawableEnd="@drawable/cross"
+            android:layout_marginEnd="20dp"
+            >
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.7"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:background="@drawable/greenrect"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Browse Categories"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_marginStart="30dp"
+                    android:textColor="#157177"
+
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:fillViewport="true"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            >
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/img_42"
+                                android:scaleType="fitXY"
+                                android:background="@null"
+                                >
+
+                            </ImageButton>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:text="Enterpenurship"
+                            android:gravity="center|start"
+                            android:paddingStart="10dp"
+                            android:drawableEnd="@drawable/uparrow"
+                            android:paddingEnd="10dp"
+
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            >
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/img_42"
+                                android:scaleType="fitXY"
+                                android:background="@null"
+                                >
+
+                            </ImageButton>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:text="Personal Growth"
+                            android:gravity="center|start"
+                            android:paddingStart="10dp"
+                            android:drawableEnd="@drawable/uparrow"
+                            android:paddingEnd="10dp"
+
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1"
+                        >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                            >
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/img_42"
+                                android:scaleType="fitXY"
+                                android:background="@null"
+                                >
+
+                            </ImageButton>
+
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:text="Career"
+                            android:gravity="center|start"
+                            android:paddingStart="10dp"
+                            android:drawableEnd="@drawable/uparrow"
+                            android:paddingEnd="10dp"
+
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#157177"
+
+        android:layout_gravity="bottom"
+        android:id="@+id/bottom"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        app:fabCradleMargin="30dp"
+        app:fabCradleRoundedCornerRadius="30dp"
+
+
+
+
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/menu1"
+            android:background="#157177"
+
+            android:animateLayoutChanges="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            app:backgroundTint="#157177"
+            app:labelVisibilityMode="labeled"
+            android:id="@+id/bottom2"
+
+            >
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/plus"
+        app:layout_anchorGravity="center|top"
+        app:layout_anchor="@id/bottom2"
+        >
+
+    </ImageButton>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

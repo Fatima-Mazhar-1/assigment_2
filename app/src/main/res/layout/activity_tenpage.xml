@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tenpage"
+    android:weightSum="10"
+    android:background="#DEF8F8"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:background="@drawable/bluerect"
+        >
+
+        <ImageButton
+            android:layout_width="86dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:contentDescription="back"
+            android:onClick="toNine"
+            android:src="@drawable/backarrow"
+
+            >
+
+        </ImageButton>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.125"
+                >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Hi, I am John Cooper"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/ypic"
+                    android:layout_width="100dp"
+                    android:layout_height="82dp"
+                    android:layout_marginTop="72dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/image310"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.945"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DEF8F8"
+            >
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Ux Designer at"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+    </TextView>
+
+    <ImageButton
+        android:layout_width="67dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="150dp"
+        android:background="@null"
+        android:contentDescription="review"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_30">
+
+    </ImageButton>
+
+    <TextView
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Google"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+
+    </TextView>
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About me"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginStart="20dp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="61dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="About me
+I am a passionate UX designer at Google with a focus on
+creating user-centric and intuitive interfaces. With 10 years of
+experience, I have had the opportunity to work on diverse
+projects that have shaped my understanding of design
+principles and user experience."
+                android:textSize="10dp"
+                android:textColor="@color/white">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.5"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My expertise include"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#157177"
+        >
+
+    </TextView>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="2"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bluerec"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Career Advice"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bluerec"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:text="User Experience Design "
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="2"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bluerec"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Prototyping"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bluerec"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Leadership"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="2"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/eleven"
+                android:layout_width="153dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custombutton2"
+                android:drawableEnd="@drawable/people"
+                android:gravity="center"
+
+                android:paddingEnd="10dp"
+
+                android:text="Drop a review"
+
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="147dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custombutton2"
+                android:drawableEnd="@drawable/people"
+                android:gravity="center"
+                android:paddingEnd="10dp"
+
+                android:text="Drop a review"
+
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        >
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/book"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_button"
+        android:text="Book a session"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </LinearLayout>
+
+
+</LinearLayout>

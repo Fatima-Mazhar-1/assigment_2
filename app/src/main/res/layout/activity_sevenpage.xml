@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sevenpage"
+    android:background="@drawable/try2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="15"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello,"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginStart="20dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="#157177"
+                android:text="Ali"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                >
+
+            </TextView>
+
+            <ImageButton
+                android:layout_marginStart="150dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:contentDescription="pic"
+                android:src="@drawable/img_40"
+                android:onClick="toNotifications"
+
+                >
+
+            </ImageButton>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ready for mentorship? Let’s begin the journey!"
+                android:textSize="15sp"
+                android:layout_marginStart="20dp"
+                android:textColor="#157177"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:text="All"
+                    android:id="@+id/All"
+
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:text="Eductaion"
+                    android:id="@+id/education"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:text="Carrer"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:text="Growth"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button"
+                    android:text="Eductaion"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:layout_marginStart="10dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top Mentors For you"
+                        android:paddingStart="20dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#157177"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="view All"
+                        android:layout_marginStart="70dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#157177"
+
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="horizontal" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top Mentors For you"
+                        android:paddingStart="20dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#157177"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:text="view All"
+                        android:textColor="#157177"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:backgroundTint="#CCCCCC"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+
+                            >
+
+                            <LinearLayout
+                                android:onClick="toTwenty1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp">
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+
+                                    android:orientation="vertical"
+
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@null"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/img_16"
+
+                                        >
+
+                                    </ImageView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            android:backgroundTint="#CCCCCC"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp">
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:background="#CCCCCC"
+
+                                    android:orientation="vertical"
+
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#CCCCCC"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/img_16"
+
+                                        >
+
+                                    </ImageView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            android:backgroundTint="#CCCCCC"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp">
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+
+                                    android:orientation="vertical"
+
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@null"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/img_16"
+
+                                        >
+
+                                    </ImageView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top Mentors For you"
+                        android:paddingStart="20dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#157177"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="view All"
+                        android:layout_marginStart="70dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#157177"
+
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:backgroundTint="#CCCCCC"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp">
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+
+                                    android:orientation="vertical"
+
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@null"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/img_16"
+
+                                        >
+
+                                    </ImageView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            android:backgroundTint="#CCCCCC"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp">
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:background="#CCCCCC"
+
+                                    android:orientation="vertical"
+
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="#CCCCCC"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/img_16"
+
+                                        >
+
+                                    </ImageView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="20dp"
+                            android:backgroundTint="#CCCCCC"
+
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp">
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+
+                                    android:orientation="vertical"
+
+                                    >
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@null"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/img_16"
+
+                                        >
+
+                                    </ImageView>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="#157177"
+        app:fabCradleMargin="30dp"
+        app:fabCradleRoundedCornerRadius="30dp"
+
+
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+
+            android:layout_marginEnd="20dp"
+            android:animateLayoutChanges="true"
+            android:background="#157177"
+            app:backgroundTint="#157177"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu1"
+
+            >
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="49dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:onClick="toSignupMentor"
+android:contentDescription="pic"
+        android:scaleType="fitXY"
+        android:src="@drawable/plus"
+        app:layout_anchor="@id/bottom2"
+        app:layout_anchorGravity="center|top">
+
+    </ImageButton>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

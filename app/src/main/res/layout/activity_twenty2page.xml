@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".twenty2page"
+    android:background="#DEF8F8"
+
+>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#50C2C9">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:background="@null"
+            android:onClick="toTwenty1"
+            android:src="@drawable/backarrow"
+            android:contentDescription="light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_anchor="@+id/constraintLayout"
+            app:layout_anchorGravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toEndOf="@+id/imageButton4"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+
+        >
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp"
+                android:textColor="#157177"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Enter your Name"
+                android:background="@drawable/whiterect"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#157177"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/whiterect"
+                android:hint="Enter your email"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#157177"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/whiterect"
+                android:paddingStart="10dp"
+                android:hint="Enter your Number"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+            </EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#157177"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/whiterect"
+                android:paddingStart="10dp"
+                android:hint="Enter your Country"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="#157177"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/whiterect"
+                android:paddingStart="10dp"
+                android:hint="Enter your city"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                >
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:id="@+id/button"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Update Profile"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                >
+
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+    <ImageButton
+
+        android:id="@+id/fab"
+        android:layout_width="58dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:backgroundTint="@null"
+        android:contentDescription="pic"
+        android:scaleType="fitXY"
+        app:layout_anchor="@id/constraintLayout"
+
+        app:layout_anchorGravity="bottom|center" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
